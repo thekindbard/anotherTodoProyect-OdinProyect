@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="main.js" type="module"></script>
+</head>
+  <body>
+        <div id="add-container">
+            <div id="add-form">
+                  <span class="close">X</span>
+                  <h2 class="add-new">Add a new todo</h2>
+                  <h2 class="add-edit">Edit a todo</h2>
+                  <form action="#" id="form">
+                        <label for="title">Title:</label>
+                      <input type="text" name="title" placeholder="title">
+                      <label for="description">Description:</label>
+                      <input type="text" name="description" placeholder="description">
+                      <label for="botes">Notes:</label>
+                      <input type="text" name="notes" placeholder="notes">
+                      <label for="proyect">Proyect: </label>
+                      <select name="proyectSelect" id="proyectSelect" class="active">
+                            <option value="default" selected>default</option>
+                            <option value="new" >new</option>
+                        </select>
+                        <input type="text" name="proyectInput" id="proyectInput">
+                        <label for="date">Expiration:</label>
+                      <input type="date" name="date" id="date">
+                      <input type="time" name="time">
+                      <button type="submit" id="add-todo" name="addTodo">Add</button>
+                      <button type="submit" id="edit-todo" name="editTodo">Edit</button>
+                  </form>
+            </div>
+        </div>
+
+        <div class="container">
+            <header>
+                  <h1>TodoList App</h1>
+                  <div>
+                        <button type="button" id="add">Add</button>
+                  </div>
+            </header>
+            <main>
+            </main>
+        </div>
+  </body>
+</html>
